@@ -98,6 +98,7 @@ public class DeckController {
                     this.aDeckTextArea.setText("This should not happen! You messed up.");
                     break;
             }
+            this.displayCardCollections();
         }
     }
 
