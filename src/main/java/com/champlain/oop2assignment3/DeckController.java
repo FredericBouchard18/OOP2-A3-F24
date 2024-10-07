@@ -91,6 +91,9 @@ public class DeckController {
                 case "Rank First":
                     this.aDeck.sort(new RankFirstComparator());
                     break;
+                case "Suit First":
+                    this.aDeck.sort(new SuitFirstComparator());
+                    break;
                 default:
                     this.aDeckTextArea.setText("This should not happen! You messed up.");
                     break;
