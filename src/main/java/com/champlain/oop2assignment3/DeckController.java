@@ -118,8 +118,9 @@ public class DeckController {
             ScoringStrategie strategy;
             switch (choice) {
                 case "Simple Count":
-                    // TODO: Replace the following line of code.
-                    this.aScoreLabel.setText("Simple count...");
+                    strategy = new CalculateSimple();
+                    int numofcount = strategy.calculateScore(this.aHand);
+                    this.aScoreLabel.setText(" Simple count " + numofcount);
                     break;
                 case "Number Of Aces":
                     strategy = new CalculateAces();
